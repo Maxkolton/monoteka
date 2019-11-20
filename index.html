@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="dist/images/index.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Yanone+Kaffeesatz:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Monoteka</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand btn" href="#">каталог</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="logo" src="dist/images/header/header_logo.png" alt="логотип монотека">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-lg-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">новости</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-lg-auto mr-4 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">поставщики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">кабинет</a>
+                    </li>
+                </ul>
+                <form class="form-inline mr-md-3 my-2 my-lg-0">
+                    <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search" class="btn my-2 my-sm-0" type="submit"><img src="dist/images/header/search.png"
+                            alt="поиск"></button>
+                </form>
+                <input type="image" src="dist/images/header/cart.png" alt="корзина">
+            </div>
+        </nav>
+    </header>
+    <!-- /.container-fluid -->
+    <main class="container-fluid">
+        <div class="row main-sliders">
+            <div class="col-12 col-lg-8 main-slide-wrapper">
+                <figure>
+                    <img src="dist/images/main/slide1.jpg" alt="">
+                    <figcaption>
+                        Monoteka-group — лучшие моменты
+                        жизни вместе с нашими рубашками
+                        <a class="btn" href="#">КУПИТЬ</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dist/images/main/slide2.jpg" alt="">
+                    <figcaption>
+                        Monoteka-group — лучшие моменты
+                        жизни вместе с нашими платьями
+                        <a class="btn" href="#">КУПИТЬ</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dist/images/main/slide3.jpg" alt="">
+                    <figcaption>
+                        Monoteka-group — лучшие моменты
+                        жизни вместе с нашими шубами
+                        <a class="btn" href="#">КУПИТЬ</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dist/images/main/slide4.jpg" alt="">
+                    <figcaption>
+                        Monoteka-group — лучшие моменты
+                        жизни вместе с нашими пиджаками
+                        <a class="btn" href="#">КУПИТЬ</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dist/images/main/slide5.jpg" alt="">
+                    <figcaption>
+                        Monoteka-group — лучшие моменты
+                        жизни вместе с нашими блузками
+                        <a class="btn" href="#">КУПИТЬ</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dist/images/main/slide6.jpg" alt="">
+                    <figcaption>
+                        Monoteka-group — лучшие моменты
+                        жизни вместе с нашими джинсами
+                        <a class="btn" href="#">КУПИТЬ</a>
+                    </figcaption>
+                </figure>
+                <span class="arrow-left"></span>
+                <span class="arrow-right"></span>
+            </div>
+            <aside class="main-aside d-none d-lg-flex col-lg-4">
+                <figure>
+                    <img src="dist/images/main/aside1.jpg" alt="">
+                    <figcaption>
+                        Пиджак
+                        <a href="#">в наших магазинах</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dist/images/main/aside2.jpg" alt="">
+                    <figcaption>
+                        Деловой стиль
+                        <a href="#">узнать больше</a>
+                    </figcaption>
+                </figure>
+            </aside>
+        </div>
+        <div class="row main-toolbar">
+            <div class="col-12">
+                <ul id="toolbar-list">
+                    <li>
+                        <img src="dist/images/main/menu_icon1.png" alt="">
+                        <span>платья</span>
+                    </li>
+                    <li>
+                        <img src="dist/images/main/menu_icon2.png" alt="">
+                        <span>шубы</span>
+                    </li>
+                    <li>
+                        <img src="dist/images/main/menu_icon3.png" alt="">
+                        <span>пиджаки</span>
+                    </li>
+                    <li>
+                        <img src="dist/images/main/menu_icon4.png" alt="">
+                        <span>блузки</span>
+                    </li>
+                    <li>
+                        <img src="dist/images/main/menu_icon5.png" alt="">
+                        <span>джинсы</span>
+                    </li>
+                    <li>
+                        <img src="dist/images/main/menu_icon6.png" alt="">
+                        <span>рубашки</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- /.container-fluid -->
+    <section class="tabs container-fluid">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="best-offers-tab" data-toggle="tab" href="#best-offers" role="tab"
+                    aria-controls="best-offers" aria-selected="true">Лучшие предложения недели</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="new-items-tab" data-toggle="tab" href="#new-items" role="tab"
+                    aria-controls="new-items" aria-selected="false">Новинки</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="recommend-tab" data-toggle="tab" href="#recommend" role="tab"
+                    aria-controls="recommend-tab" aria-selected="false">Рекомендуем</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane d-flex fade show active" id="best-offers" role="tabpanel"
+                aria-labelledby="best-offers-tab">
+                <div class="card">
+                    <div class="wrapper-hide">
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td>Кожа</td>
+                                </tr>
+                                <tr>
+                                    <td>Сезон</td>
+                                    <td>Лето</td>
+                                </tr>
+                                <tr>
+                                    <td>Страна-производитель</td>
+                                    <td>Франция</td>
+                                </tr>
+                                <tr>
+                                    <td>Длина</td>
+                                    <td>Мини</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="link-card" href="#">Перейти к продажам</a>
+                    </div>
+                    <!-- /.wrapper-hide -->
+                    <div class="wrap-img wrap-img-after">
+                        <img src="dist/images/section/section1.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2>Кожаная юбка</h2>
+                        <p class="card-text">
+                            Описание: Кожаная юбка из кожи, с молнией
+                        </p>
+                        <div class="wrapper">
+                            <div class="size">
+                                <span class="btn btn-outline-warning">42</span>
+                                <span class="text">РАЗМЕР</span>
+                            </div>
+                            <div class="price ml-auto">
+                                <span class="current-price">790 р.</span>
+                            </div>
+                            <span class="incart"><img src="dist/images/section/incart.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="wrapper-hide">
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td>Хлопок</td>
+                                </tr>
+                                <tr>
+                                    <td>Сезон</td>
+                                    <td>Лето</td>
+                                </tr>
+                                <tr>
+                                    <td>Страна-производитель</td>
+                                    <td>Италия</td>
+                                </tr>
+                                <tr>
+                                    <td>Длина</td>
+                                    <td>Мини</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="link-card" href="#">Перейти к продажам</a>
+                    </div>
+                    <!-- /.wrapper-hide d-none -->
+                    <div class="wrap-img wrap-img-after">
+                        <img src="dist/images/section/section2.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2>Платье в горох с поясом</h2>
+                        <p class="card-text">
+                            Описание: Платье в горох с поясом из трикотажа, без молнии
+                        </p>
+                        <div class="wrapper">
+                            <div class="size">
+                                <span class="btn btn-outline-warning">44</span>
+                                <span class="btn btn-outline-secondary">42</span>
+                                <span class="btn btn-outline-secondary">40</span>
+                                <span class="text">РАЗМЕР</span>
+                            </div>
+                            <div class="price ml-auto">
+                                <span class="old-price">1190 р.</span>
+                                <span class="current-price">790 р.</span>
+                            </div>
+                            <span class="incart"><img src="dist/images/section/incart.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="wrapper-hide">
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td>Хлопок</td>
+                                </tr>
+                                <tr>
+                                    <td>Сезон</td>
+                                    <td>Лето</td>
+                                </tr>
+                                <tr>
+                                    <td>Страна-производитель</td>
+                                    <td>Франция</td>
+                                </tr>
+                                <tr>
+                                    <td>Длина</td>
+                                    <td>Мини</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="link-card" href="#">Перейти к продажам</a>
+                    </div>
+                    <!-- /.wrapper-hide d-none -->
+                    <div class="wrap-img wrap-img-after">
+                        <img src="dist/images/section/section3.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2>Розовое платье</h2>
+                        <p class="card-text">
+                            Описание: Розовое платье из трикотажа, без молнии
+                        </p>
+                        <div class="wrapper">
+                            <div class="size">
+                                <span class="btn btn-outline-warning">48</span>
+                                <span class="btn btn-outline-secondary">46</span>
+                                <span class="btn btn-outline-secondary">44</span>
+                                <span class="text">РАЗМЕР</span>
+                            </div>
+                            <div class="price ml-auto">
+                                <span class="current-price">790 р.</span>
+                            </div>
+                            <span class="incart"><img src="dist/images/section/incart.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="wrapper-hide">
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Материал</td>
+                                    <td>Шерсть</td>
+                                </tr>
+                                <tr>
+                                    <td>Сезон</td>
+                                    <td>Осень</td>
+                                </tr>
+                                <tr>
+                                    <td>Страна-производитель</td>
+                                    <td>Франция</td>
+                                </tr>
+                                <tr>
+                                    <td>Длина</td>
+                                    <td>Мини</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="link-card" href="#">Перейти к продажам</a>
+                    </div>
+                    <!-- /.wrapper-hide d-none -->
+                    <div class="wrap-img wrap-img-after">
+                        <img src="dist/images/section/section4.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2>Полосатая кофта</h2>
+                        <p class="card-text">
+                            Описание: Полосатая кофта из полосатого трикотажа, без молнии
+                        </p>
+                        <div class="wrapper">
+                            <div class="size">
+                                <span class="btn btn-outline-warning">40</span>
+                                <span class="text">РАЗМЕР</span>
+                            </div>
+                            <div class="price ml-auto">
+                                <span class="current-price">790 р.</span>
+                            </div>
+                            <span class="incart"><img src="dist/images/section/incart.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="new-items" role="tabpanel" aria-labelledby="new-items-tab">б</div>
+            <div class="tab-pane fade" id="recommend" role="tabpanel" aria-labelledby="recommend-tab">в</div>
+        </div>
+    </section>
+    <!-- /.tabs -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="dist/js/scripts.js"></script>
+</body>
+
+</html>

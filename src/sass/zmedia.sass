@@ -1,0 +1,277 @@
+/* 
+    *********************************
+    header start
+
+@media only screen and (max-width: 1334px)
+    header
+        nav
+            .navbar-nav:first-of-type
+                width: 200px
+                margin-left: 0 !important
+            .navbar-nav:nth-of-type(2)
+                width: 300px
+                margin-right: 0 !important
+            .logo
+                max-width: 120px
+                margin: 0 auto
+            a
+                font-size: 1rem
+           
+@media only screen and (max-width: 1187px)
+    header
+        nav
+            .navbar-brand
+                width: 110px
+                font-size: .8rem
+            .navbar-nav:first-of-type
+                width: 150px
+            .navbar-nav:nth-of-type(2)
+                justify-content: flex-end
+                width: 250px
+            a
+                font-size: .9rem
+            .logo
+                max-width: 100px
+                left: 43%
+                transform: translateX(-43%)
+            form
+                input[type="search"]
+                    max-width: 150px
+                    height: 35px
+                button
+                    margin-left: 5px
+
+
+@media only screen and (max-width: 991px)
+    header
+        nav
+            .navbar-toggler
+                max-width: 55px
+                height: 50px
+                margin-left: auto
+            .navbar-toggler-icon
+                width: 1em
+                height: 1em
+            .navbar-brand
+                width: 90px
+                height: 30px
+                padding: 0
+                padding-top: 4px
+                padding-left: 4px
+                &::after
+                    display: none
+            .logo
+                left: 50%
+                transform: translateX(-50%)
+
+@media only screen and (max-width: 460px)
+    header
+        nav
+            .logo
+                max-width: 80px
+                top: 1.3rem
+                left: 50%
+                transform: translateX(-50%)
+            .nav-link
+                padding: 5px
+            .form-inline
+                margin: 0 !important
+                button
+                    width: 35px
+                    height: 35px
+                    padding: 0
+                    margin-left: 10px
+
+/* 
+    *********************************
+    header end
+
+/* 
+    *********************************
+    main start
+
+@media only screen and (max-width: 1334px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 500px
+            figure
+                figcaption
+                    font-size: 1.7rem
+                    min-width: 300px
+
+@media only screen and (max-width: 1187px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 400px
+            figure
+                figcaption
+                    font-size: 1.4rem
+                    max-width: 350px
+                    a
+                        width: 120px
+                        height: 35px
+                        padding: 0
+                        padding-top: 5px
+                        font-size: .9rem
+
+@media only screen and (max-width: 991px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 540px
+            figure
+                figcaption
+                    font-size: 1.9rem
+                    max-width: 500px
+                    a
+                        width: 140px
+                        height: 45px
+                        padding-top: 10px
+
+@media only screen and (max-width: 884px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 500px
+            figure
+                figcaption
+                    font-size: 1.6rem
+                    max-width: 400px
+                    a
+                        width: 120px
+                        height: 35px
+                        padding-top: 5px
+
+@media only screen and (max-width: 749px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 400px
+            figure
+                figcaption
+                    font-size: 1.4rem
+                    max-width: 350px
+        .main-toolbar
+            ul
+                li
+                    img
+                        width: 25px
+                        height: 35px
+                    span
+                        font-size: .8rem
+                        margin-top: 5px
+
+@media only screen and (max-width: 659px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 350px
+            figure
+                figcaption
+                    font-size: 1.3rem
+                    max-width: 300px
+        .main-toolbar
+            min-height: 190px
+            ul
+                height: 100%
+                flex-flow: row wrap
+                align-content: stretch
+                li
+                    flex: 1 0 150px
+                    padding-top: 10px
+                    border-bottom: 1px solid #fff
+    
+@media only screen and (max-width: 509px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 300px
+            figure
+                figcaption
+                    top: 25%
+                    text-align: center
+                    font-size: 1rem
+                    a
+                        width: 100px
+                        height: 30px
+                        padding-top: 2px
+                        margin: 0 auto
+        .main-toolbar
+            min-height: 140px
+            ul
+                li
+                    flex: 1 0 100px
+                    img
+                        width: 20px
+                        height: 30px
+                    span
+                        font-size: .7rem
+                        margin-top: 5px
+                    
+
+@media only screen and (max-width: 404px)
+    main.container-fluid
+        .main-slide-wrapper
+            min-height: 230px
+            .arrow-left
+                width: 40px
+                height: 40px
+            .arrow-right
+                width: 40px
+                height: 40px
+        .main-toolbar
+            min-height: 130px
+            ul
+                li
+                    flex: 1 0 95px
+                    img
+                        width: 15px
+                        height: 20px
+                    span
+                        font-size: .6rem
+                        margin-top: 2px
+
+/* 
+    *********************************
+    main end
+
+/* 
+    *********************************
+    section start
+
+@media only screen and (max-width: 1215px)
+    section.tabs
+        .nav-tabs .nav-link
+            font-size:  1.2rem
+        #best-offers
+            .card
+                .wrapper
+                    .size
+                        .btn
+                            width: 40px
+
+@media only screen and (max-width: 1136px)
+    section.tabs 
+        #best-offers
+            flex-flow: row wrap
+            .card
+                width: 33%
+                &:nth-of-type(n+1)
+                    margin: 0
+                    margin-top: 20px
+                .wrapper
+                    .size
+                        .btn
+                            width: 30px
+
+@media only screen and (max-width: 873px)
+    section.tabs 
+        #best-offers
+            .card
+                width: 50%
+    
+@media only screen and (max-width: 574px)
+    section.tabs 
+        #best-offers
+            .card
+                width: 100%
+                
+
+/* 
+    *********************************
+    section end

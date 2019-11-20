@@ -1,0 +1,57 @@
+/* 
+    *********************************
+    header start
+
+header
+    nav
+        min-height: 50px
+        .navbar-brand
+            position: relative
+            color: #fff !important
+            background-color: $bg_orange
+            width: 140px
+            height: 35px
+            text-align: left
+            padding-left: 27px
+            font-size: .9rem
+            &::after
+                position: absolute
+                width: 10px
+                height: 17px
+                content: ''
+                background: url('../images/header/arrow_header.png') center no-repeat
+                right: 10%
+                top: 50%
+                transform: translateY(-50%)
+        .navbar-nav:first-of-type
+            width: 234px
+            justify-content: space-around
+        .navbar-nav:nth-of-type(2)
+            width: 350px
+            justify-content: space-around
+        a
+            font-family: "Yanone Kaffeesatz"
+            font-size: 1.1rem
+            font-weight: 400
+            text-transform: uppercase
+        .logo
+            position: fixed
+            top: 1rem
+            left: 40%
+            transform: translateX(-40%)
+            max-width: 130px
+        form
+            display: flex
+            flex-flow: row nowrap !important
+            input[type="search"]
+                max-width: 180px
+                height: 40px
+                font-size: .7rem
+            button
+                width: 45px
+                height: 40px
+                padding: 0 !important
+    
+/* 
+    *********************************
+    header end

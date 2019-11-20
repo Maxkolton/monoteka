@@ -1,0 +1,469 @@
+/*
+    *********************************
+    default start */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz' sans-serif;
+    margin: 0 auto;
+    min-width: 320px;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-size: .75rem;
+}
+
+button, a, input {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+    *********************************
+    default end */
+/*
+    *********************************
+    header start */
+header nav {
+    min-height: 50px;
+}
+
+header nav .navbar-brand {
+    position: relative;
+    color: #fff !important;
+    background-color: #ef7f1a;
+    width: 140px;
+    height: 35px;
+    text-align: left;
+    padding-left: 27px;
+    font-size: .9rem;
+}
+
+header nav .navbar-brand::after {
+    position: absolute;
+    width: 10px;
+    height: 17px;
+    content: '';
+    background: url("../images/header/arrow_header.png") center no-repeat;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav .navbar-nav:first-of-type {
+    width: 234px;
+    justify-content: space-around;
+}
+
+header nav .navbar-nav:nth-of-type(2) {
+    width: 350px;
+    justify-content: space-around;
+}
+
+header nav a {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header nav .logo {
+    position: fixed;
+    top: 1rem;
+    left: 40%;
+    transform: translateX(-40%);
+    max-width: 130px;
+}
+
+header nav form {
+    display: flex;
+    flex-flow: row nowrap !important;
+}
+
+header nav form input[type="search"] {
+    max-width: 180px;
+    height: 40px;
+    font-size: .7rem;
+}
+
+header nav form button {
+    width: 45px;
+    height: 40px;
+    padding: 0 !important;
+}
+
+/*
+    *********************************
+    header end */
+/*
+    *********************************
+    main start */
+main.container-fluid {
+    margin-top: 70px;
+}
+
+main.container-fluid .row {
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main.container-fluid .main-slide-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 540px;
+    padding: 0;
+    border-right: 1px solid #fff;
+}
+
+main.container-fluid .main-slide-wrapper figure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: left .5s ease;
+}
+
+main.container-fluid .main-slide-wrapper figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main.container-fluid .main-slide-wrapper figure figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 2rem;
+    font-weight: 700;
+    min-width: 500px;
+}
+
+main.container-fluid .main-slide-wrapper figure figcaption a {
+    display: block;
+    width: 160px;
+    height: 46px;
+    background-color: #ef7f1a;
+    color: #fff;
+}
+
+main.container-fluid .main-slide-wrapper .arrow-left {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+    width: 48px;
+    height: 48px;
+    border: 3px solid #5b523a;
+    border-radius: 50%;
+    background: url("../images/main/arrow_left.png") center no-repeat;
+    transition: border-color 0.7s;
+    z-index: 5;
+}
+
+main.container-fluid .main-slide-wrapper .arrow-left:hover {
+    border: 3px solid #fff;
+    background: url("../images/main/arrow_left_2.png") center no-repeat;
+}
+
+main.container-fluid .main-slide-wrapper .arrow-right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    transform: translateX(5%);
+    width: 48px;
+    height: 48px;
+    border: 3px solid #5b523a;
+    border-radius: 50%;
+    background: url("../images/main/arrow_right.png") center no-repeat;
+    transition: border-color .7s;
+    z-index: 5;
+}
+
+main.container-fluid .main-slide-wrapper .arrow-right:hover {
+    border: 3px solid #fff;
+    background: url("../images/main/arrow_right_2.png") center no-repeat;
+}
+
+main.container-fluid .main-aside {
+    padding: 0;
+}
+
+main.container-fluid .main-aside figure {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+main.container-fluid .main-aside figure:first-of-type {
+    border-right: 1px solid #fff;
+}
+
+main.container-fluid .main-aside figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main.container-fluid .main-aside figure figcaption {
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 147px;
+    color: #ffffff;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+main.container-fluid .main-aside figure figcaption a {
+    display: block;
+    color: #ef7f1a;
+    font-family: "Clear Sans";
+    font-size: .8rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+main.container-fluid .main-toolbar {
+    height: 100px;
+    background-color: #000000;
+    border-top: 1px solid #fff;
+}
+
+main.container-fluid .main-toolbar div.col-12 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main.container-fluid .main-toolbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main.container-fluid .main-toolbar ul li {
+    border-right: 1px solid #fff;
+    flex: 1 0 100px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+main.container-fluid .main-toolbar ul li img {
+    width: 30px;
+    height: 40px;
+}
+
+main.container-fluid .main-toolbar ul li span {
+    display: block;
+    color: #ffffff;
+    font-family: "Yanone Kaffeesatz";
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*
+    *********************************
+    main end */
+/*
+    *********************************
+   section start */
+section.tabs {
+    margin-top: 61px;
+    margin-bottom: 60px;
+}
+
+section.tabs #myTab {
+    border: none;
+}
+
+section.tabs #myTab .nav-item:nth-of-type(n+2) {
+    margin-left: 20px;
+}
+
+section.tabs .nav-tabs .nav-link {
+    color: #000;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+section.tabs .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+section.tabs .nav-tabs .nav-link.active {
+    border: none;
+    color: #ef7f1a;
+    border-bottom: 2px solid #ef7f1a;
+}
+
+section.tabs #best-offers {
+    justify-content: space-between;
+}
+
+section.tabs #best-offers .card {
+    position: relative;
+    cursor: pointer;
+    transition: background-color ease .9s;
+    width: calc(100%/4);
+    border-radius: 0;
+}
+
+section.tabs #best-offers .card:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+section.tabs #best-offers .card:nth-of-type(n+2) {
+    margin-left: 20px;
+}
+
+section.tabs #best-offers .card .wrap-img {
+    position: relative;
+}
+
+section.tabs #best-offers .card .wrap-img-after::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.tabs #best-offers .card .card-img-top {
+    border-radius: 0;
+}
+
+section.tabs #best-offers .card .wrapper-hide {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 75%;
+    transition: opacity ease 2s;
+    z-index: 5;
+}
+
+section.tabs #best-offers .card .wrapper-hide .table-bordered {
+    text-align: left;
+    width: 95%;
+    font-size: .6rem;
+    height: 120px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+section.tabs #best-offers .card .wrapper-hide .table-bordered td:nth-of-type(odd) {
+    padding-left: 20px;
+}
+
+section.tabs #best-offers .card .wrapper-hide .table-bordered td:nth-of-type(even) {
+    text-align: right;
+    padding-right: 10px;
+}
+
+section.tabs #best-offers .card .wrapper-hide .link-card {
+    max-width: 155px;
+    color: #ef7f1a;
+    font-family: "Clear Sans";
+    font-size: .8rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid #ef7f1a;
+}
+
+section.tabs #best-offers .card h2 {
+    color: inherit;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+section.tabs #best-offers .card p {
+    font-family: "Clear Sans";
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+section.tabs #best-offers .card .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+section.tabs #best-offers .card .wrapper .size .btn {
+    width: 46px;
+    height: 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: .5rem;
+    padding: 0;
+    padding-top: 3px;
+    border-radius: 4px;
+}
+
+section.tabs #best-offers .card .wrapper .size .text {
+    display: block;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section.tabs #best-offers .card .wrapper .price span {
+    display: block;
+    line-height: 30px;
+}
+
+section.tabs #best-offers .card .wrapper .price .old-price {
+    color: #bbbbbb;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+section.tabs #best-offers .card .wrapper .price .current-price {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/*
+    *********************************
+    section end */
